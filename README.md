@@ -1,11 +1,11 @@
 
 
-ShenAleph
+thepeak
 ===
 
-This is the WP theme for Shenandoah vol 68, issue 2.
+This is the base WP theme for The Peak, a blog within Shenandoah literary 
 
-This theme is based on the starter theme called `_s`, or `underscores`.
+This theme is based on the WP theme for Shenandoah magazine. vol 68, issue 2, which was a modification of the starter theme called `_s`, or `underscores`. 
 
 
 
