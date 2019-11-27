@@ -14,57 +14,29 @@
 
 get_header();
 ?>
-<div class="row volumeIssue">
-</div>
-</section>
+
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main container">
+		<main id="main" class="site-main">
 
-			<?php
-			if ( have_posts() ) :
-				if ( is_home() && ! is_front_page() ) :
-					?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-					<?php
-				endif;
-				/* Start the Loop */
-				while ( have_posts() ) :
-					the_post();
-					/*
-					 * Include the Post-Type-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-					 */
-					 if ( has_tag('columns-3') ) :
-						 get_template_part( 'template-parts/content', 'col3' );
+		<?php
+		if ( have_posts() ) :
+							/* Start the Loop if single-then content, if not else this*/
+							while ( have_posts() ) :
+								the_post();
+								if ( is_single() ) :
+		 						 get_template_part( 'template-parts/content', get_post_type() );
+							 else:
+								get_template_part( 'template-parts/content', 'peak' );
+								endif;
+								/* else {
+									// code...
+								}get_template_part( 'template-parts/content', get_post_type() ); */
+							endwhile;
 
-						 elseif ( has_tag('columns-11') ) :
- 							 get_template_part( 'template-parts/content', 'col11' );
-
-						elseif ( has_tag('columns-12') ) :
-							 get_template_part( 'template-parts/content', 'col12' );
-
-					 elseif (has_tag('erasure') )  :
-	 									get_template_part( 'template-parts/content', 'erasure' );
-
-					elseif (has_tag('translation') )  :
-							get_template_part( 'template-parts/content', 'translation' );
-
-					elseif (has_tag('hide-byline') )  :
-									get_template_part( 'template-parts/content', 'hide-byline' );
-
-					 else :
-
-					get_template_part( 'template-parts/content', get_post_type() );
-				endif;
-		  	endwhile;
-				the_posts_navigation();
-			else :
-				get_template_part( 'template-parts/content', 'none' );
-			endif;
-			?>
+						else :
+							get_template_part( 'template-parts/content', 'none' );
+						endif;
+						?>
 
 
 		</main><!-- #main -->
