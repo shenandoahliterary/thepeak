@@ -1,9 +1,9 @@
 /*!
-Theme Name: ShenAleph691
+Theme Name: ThePeak
 Theme URI: https://github.com/jeffreybarry/ShenAleph
 Author: Jeff Barry
 Author URI: http://jeffbarry.org
-Description: for Shenandoah v69, no1
+Description:  Shenandoah The Peak
 Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -1437,7 +1437,7 @@ font-size: 1.3rem;
 	padding: 0;
 }
 
-/* Make sure embeds and iframes fit their containers. */
+/* Make sure embeds and iframes fit their is. */
 embed,
 iframe,
 object {
@@ -1527,6 +1527,21 @@ height: auto;
 
 .gallery-caption {
 	display: block;
+}
+
+/* Coletta's Peak index style */
+.thumb{
+	font-size: 10;
+	/*text-shadow: #000000 10px -5px 1px;*/
+}
+
+.card .card-title{
+	margin-bottom: 0;
+}
+
+.card .card-text{
+	color: black;
+	text-decoration: none; /* make this text not underlined on hover*/
 }
 
 /*--------------------------------------------------------------
@@ -1645,6 +1660,7 @@ text-align: center;
 .cover-image {
 object-fit: contain;
 }
+
 
 /* END 320px - 480px*/
 }
