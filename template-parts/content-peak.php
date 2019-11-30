@@ -14,7 +14,11 @@
 		<a href = <?php the_permalink(); ?>><div class="card" style = "width:300px">
 			<?php the_post_thumbnail(); ?>
 			<div class="card-body">
-				<h6 class="card-subtitle mb-2 text-muted">CONVERSATIONS</h6> <!-- this will get the category eventually-->
+				<h6 class="card-subtitle mb-2 text-muted">
+          <?php
+            $category = get_the_category();
+            echo mb_strtoupper($category[0]->cat_name);?> 
+        </h6>
 				<h5 class="card-title"><?php the_title(); ?></h5>
 				<p class="card-text"><?php echo get_the_excerpt(); ?></p>
 			</div>
