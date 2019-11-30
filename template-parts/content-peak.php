@@ -17,7 +17,7 @@
 				<h6 class="card-subtitle mb-2 text-muted">
           <?php
             $category = get_the_category();
-            echo mb_strtoupper($category[0]->cat_name);?> 
+            echo mb_strtoupper($category[0]->cat_name);?>
         </h6>
 				<h5 class="card-title"><?php the_title(); ?></h5>
 				<p class="card-text"><?php echo get_the_excerpt(); ?></p>
