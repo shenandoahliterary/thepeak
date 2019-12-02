@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" class = "thumb"  style = "width:300px">
 	<header class="entry-header">
-		<a href = <?php the_permalink(); ?>><div class="card" style = "width:300px">
+		<a href = <?php the_permalink(); ?>><div class="card">
 			<?php the_post_thumbnail(); ?>
 			<div class="card-body">
 				<h6 class="card-subtitle mb-2 text-muted">

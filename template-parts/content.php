@@ -34,6 +34,7 @@
 			 shenAleph_filter_authors();
 		 }
 			  ?></p>
+				<p><?php echo get_the_date(); ?></p>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
