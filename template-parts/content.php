@@ -25,21 +25,16 @@
 				<!-- add byline -->
 				<p class="workAuthorByline"><?php
 /* should add to filter: if filter is empty then only the_author_meta; if filter is not empty, then all authors from filter */
-				if (in_category('feature')) {
-					echo "";
-				}
-				else {
-			 the_author_meta('display_name');
-			 echo "<br />";
+
+			 		the_author_meta('display_name');
+			 		?><span class = "text-muted dateLine"><?php echo get_the_date(); ?></span><?php
+			 		echo "<br />";
 			 shenAleph_filter_authors();
-		 }
+		 
 			  ?></p>
-				<p><?php echo get_the_date(); ?></p>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php shenAleph_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

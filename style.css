@@ -511,6 +511,9 @@ p {
 	font-weight: 300;
 	font-size: 2rem;
 }
+.dateLine {
+	font-size: 1rem;
+}
 
 /* author name above bio at bottom of page */
 .workAuthor {
@@ -1537,6 +1540,9 @@ height: auto;
 
 .card .card-title{
 	margin-bottom: 0;
+}
+
+.card .card-subtitle{
 }
 
 .card .card-text{
