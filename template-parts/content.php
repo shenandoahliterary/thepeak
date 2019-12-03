@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="row">
+<div class="row cover-row">
 <div class="col-md-8 offset-md-2">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -30,7 +30,7 @@
 			 		?><span class = "text-muted dateLine"><?php echo get_the_date(); ?></span><?php
 			 		echo "<br />";
 			 shenAleph_filter_authors();
-		 
+
 			  ?></p>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -97,11 +97,19 @@
 
 	    }
 }
-//extra content that might appears below bio
+//extra content that might appear below bio
 $extra_content = $custom_fields['extra_content'];
 if (! empty($extra_content)) {
 	echo "$extra_content[0] <br />";
 }
+
+//link to other content by author
+$link = $custom_fields['link'];
+if (! empty($link)) {
+	echo "<br />";
+	echo "<a href=$link[0]>Name of Link</a> <br />";
+}
+
 	?>
 	<footer class="entry-footer">
 		<?php shenAleph_entry_footer(); ?>
