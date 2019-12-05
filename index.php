@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+			<div class="row justify-content-md-center">
 		<?php
 		if ( have_posts() ) :
 							/* Start the Loop if single-then content, if not else this*/
@@ -26,13 +26,16 @@ get_header();
 								if ( is_single() ) :
 		 						 get_template_part( 'template-parts/content', get_post_type() );
 							 else:
+								 ?> <div class = "col col-sm-4 d-flex justify-content-center"><?php
+							 // ... make column, add 1/3 of the posts, second column, third column^
 								get_template_part( 'template-parts/content', 'peak' );
+								?> </div><?php
 								endif;
 								/* else {
 									// code...
 								}get_template_part( 'template-parts/content', get_post_type() ); */
 							endwhile;
-
+							?></div><?php
 						else :
 							get_template_part( 'template-parts/content', 'none' );
 						endif;
