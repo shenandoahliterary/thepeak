@@ -27,6 +27,11 @@
 /* should add to filter: if filter is empty then only the_author_meta; if filter is not empty, then all authors from filter */
 
 			 		the_author_meta('display_name');
+					$custom_fields = get_post_custom();
+					$second_author = $custom_fields['second_author'];
+					if (! empty($second_author)) {
+						echo "<br /> $second_author[0]";
+					}
 			 		?><span class = "text-muted dateLine"><?php echo " " . get_the_date(); ?></span><?php
 			 		echo "<br />";
 			 shenAleph_filter_authors();
