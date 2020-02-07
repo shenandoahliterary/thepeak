@@ -21,12 +21,16 @@ get_header();
 		<?php
 		if ( have_posts() ) :
 							/* Start the Loop if single-then content, if not else this*/
+							$count = 1;
 							while ( have_posts() ) :
 								the_post();
 								if ( is_single() ) :
 		 						 get_template_part( 'template-parts/content', get_post_type() );
 							 else:
-								 ?> <div class = "col col-sm-4 d-flex justify-content-center"><?php
+								 if ($count == "1") {
+									?> <div class="card-columns"><?php
+ 								}
+								 ?> <div class = "col-sm-4 justify-content-center"><?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
 								get_template_part( 'template-parts/content', 'peak' );
 								?> </div><?php
@@ -34,7 +38,9 @@ get_header();
 								/* else {
 									// code...
 								}get_template_part( 'template-parts/content', get_post_type() ); */
+								$count += 1;
 							endwhile;
+
 							?></div><?php
 						else :
 							get_template_part( 'template-parts/content', 'none' );
