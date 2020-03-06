@@ -1040,12 +1040,12 @@ footer {
 .card-img {
 	overflow: hidden !important;
 }
+
 .footimages {
-	background-color: #a4cccc;
 	padding-top: 4rem;
 	margin-top:4rem;
-	padding-bottom: 4rem;
-	margin-bottom:4rem;
+	padding-bottom: -1rem;
+	margin-bottom:1rem;
 	padding-right: 4rem;
 	margin-right:4rem;
 	padding-left: 4rem;
@@ -1053,10 +1053,8 @@ footer {
 }
 
 #sides {
-	padding-top: 1rem;
+	padding-top: 4rem;
 	margin-top:4rem;
-	padding-bottom: 1rem;
-	margin-bottom:4rem;
 	padding-right: 1rem;
 	margin-right:4rem;
 	padding-left: 1rem;
