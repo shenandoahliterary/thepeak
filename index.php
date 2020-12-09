@@ -40,7 +40,7 @@ get_header();
 								}get_template_part( 'template-parts/content', get_post_type() ); */
 								$count += 1;
 							endwhile;
-
+the_posts_pagination();
 							?></div><?php
 						else :
 							get_template_part( 'template-parts/content', 'none' );
