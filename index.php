@@ -48,7 +48,7 @@ get_header();
 
 						?>
 
-test
+<!-- a test comment here appears at the bottom of page 1 before the pagination, but on p2 it appears after the pagination -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
