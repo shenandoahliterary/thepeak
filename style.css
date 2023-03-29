@@ -4,7 +4,7 @@ Theme URI: https://github.com/jeffreybarry/ShenAleph
 Author: Jeff Barry
 Author URI: http://jeffbarry.org
 Description:  Shenandoah The Peak
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: custom-theme-for-the-shenandoah-literary-magazine
@@ -1291,6 +1291,10 @@ a:hover, a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+.pagination {
+	font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
