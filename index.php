@@ -28,7 +28,8 @@ get_header();
 		 						 get_template_part( 'template-parts/content', get_post_type() );
 							 else:
 								 if ($count == "1") {
-									?> <div class="card-columns"><?php
+									//remove card-columns class
+									?> <div class=""><?php
  								}
 								 ?> <div class = "col-sm-4 justify-content-center"><?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
