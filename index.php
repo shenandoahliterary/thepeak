@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
-			<div class="row justify-content-md-center">
+			<div class="row justify-content-md-center" data-masonry='{"percentPosition": true }'>
 		<?php
 		if ( have_posts() ) :
 							/* Start the Loop if single-then content, if not else this*/
