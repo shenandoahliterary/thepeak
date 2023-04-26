@@ -34,7 +34,8 @@ get_header();
 								 ?> <div class = "col-sm-4 col-lg-4 justify-content-center"><?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
 								get_template_part( 'template-parts/content', 'peak' );
-								?> </div><!-- where is this ending? --><?php
+								?> </div><!-- where is this ending? -->
+								<?php
 								endif;
 								/* else {
 									// code...
