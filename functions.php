@@ -157,7 +157,8 @@ wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap
 
 
 //Masonry script needed to replicate card column styling in Bootstrap v5
-wp_enqueue_script('masonry', 'https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js');
+//Using Masonry library: https://masonry.desandro.com/#cdn
+wp_enqueue_script('masonry', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js');
 
 
 
