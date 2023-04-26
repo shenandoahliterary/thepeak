@@ -18,6 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
 			<div class="row justify-content-md-center" data-masonry='{"percentPosition": true }'>
+			<div class = "col-sm-4 col-lg-4 justify-content-center">
 		<?php
 		if ( have_posts() ) :
 							/* Start the Loop if single-then content, if not else this*/
@@ -32,7 +33,8 @@ get_header();
 									?> <div class="testing-class-name"><?php
  								}
 								 ?> 
-						<div class = "col-sm-4 col-lg-4 justify-content-center"><?php
+								 <!-- moved div opening col to outside of loop. DIV was below this line, before the php opening tag -->
+						<?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
 								get_template_part( 'template-parts/content', 'peak' );
 								?> </div><!-- where is this ending? -->
