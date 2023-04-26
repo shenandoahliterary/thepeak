@@ -29,7 +29,7 @@ get_header();
 							 else:
 								 if ($count == "1") {
 									//remove card-columns class
-									?> <div class=""><?php
+									?> <div class="testing-class-name"><?php
  								}
 								 ?> <div class = "col-sm-4 justify-content-center"><?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
