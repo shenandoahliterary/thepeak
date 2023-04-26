@@ -33,7 +33,7 @@ get_header();
 									?> <div class="testing-class-name"><?php
  								}
 								 ?> 
-								 <!-- moved div opening col to outside of loop. DIV was below this line, before the php opening tag -->
+								 <!-- moved div opening col to outside of loop. The following opening column is needed for the post content -->
 								 <div class = "col-sm-4 col-lg-4 justify-content-center">
 						<?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
