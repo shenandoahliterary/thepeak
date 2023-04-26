@@ -27,6 +27,7 @@ get_header();
 								the_post();
 								if ( is_single() ) :
 		 						 get_template_part( 'template-parts/content', get_post_type() );
+								 //add is_home template part
 							 else:
 								 if ($count == "1") {
 									//remove card-columns class
