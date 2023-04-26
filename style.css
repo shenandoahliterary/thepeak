@@ -436,7 +436,7 @@ textarea {
 		margin-bottom: -5vw;
 
 }
-
+/* updated to ShenAleph 2.2 styling
 #typelogo a:link {
 	text-decoration: none;
 	color: #181818;
@@ -446,6 +446,13 @@ textarea {
 	text-decoration: none;
 	color: #181818;
 }
+*/
+
+#typelogo a:link, #typelogo a:visited {
+	text-decoration: none;
+	color: rgb(103,173,168);
+}
+
 
 footer hr {
 	background-color: #181818 !important;
