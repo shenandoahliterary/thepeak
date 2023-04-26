@@ -23,7 +23,5 @@
     </div>
   </a>
 	</header><!-- .entry-header -->
-	<footer class="entry-footer">
-		<?php shenAleph_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
