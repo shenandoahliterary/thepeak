@@ -23,7 +23,7 @@
 			?>
 			<div class="entry-meta">
 				<!-- add byline -->
-				<p class="workAuthorByline"><?php
+				<p class="workAuthorByline TEST-CLASS"><?php
 /* should add to filter: if filter is empty then only the_author_meta; if filter is not empty, then all authors from filter */
 
 			 		the_author_meta('display_name');
