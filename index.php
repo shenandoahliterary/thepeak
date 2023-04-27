@@ -36,8 +36,7 @@ get_header();
 							 // ... make column, add 1/3 of the posts, second column, third column
 							 //content-peak creates article template
 								get_template_part( 'template-parts/content', 'peak' );
-								?> 
-								<?php
+
 								endif;
 								$count += 1;
 							endwhile;
