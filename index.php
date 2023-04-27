@@ -30,7 +30,7 @@ get_header();
 							 else:
 								?> <div class="col-md-4"><?php
 								 if ($count == "1") {
-									?> <div class="TEST"><?php
+									?> <!-- <div class="TEST"> --> <?php
  								}
 								 ?> 
 						<?php
