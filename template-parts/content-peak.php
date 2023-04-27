@@ -7,7 +7,7 @@
  * @package ShenAleph
  */
 ?>
-<article id="post-<?php the_ID(); ?>" class = "thumb"  style = "width:300px;display:inline;">
+<article id="post-<?php the_ID(); ?>" class = "thumb"  style = "width:300px;">
 	<header class="entry-header">
 		<a href = <?php the_permalink(); ?>><div class="card">
 			<?php the_post_thumbnail(); ?>
