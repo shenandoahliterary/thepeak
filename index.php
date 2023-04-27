@@ -40,7 +40,7 @@ get_header();
 						<?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
 								get_template_part( 'template-parts/content', 'peak' );
-								?> <!--  </div>where is this ending?  Remove this unneeded div? -->
+								?> 
 								<?php
 								endif;
 								/* else {
