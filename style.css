@@ -872,6 +872,10 @@ section.workAuthorBio a {
 
 }
 
+article {
+	display: inline;
+}
+
 .article-content { margin-top: 0em;
      margin-bottom: 0;
      text-indent: 1.4em;
