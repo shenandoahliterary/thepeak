@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
-			<section class="row" data-masonry='{"percentPosition": true }'>
+			<section class="row">
 			
 		<?php
 		if ( have_posts() ) :
