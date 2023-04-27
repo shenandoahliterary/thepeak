@@ -18,7 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
 			<section class="row">
-			
+			<div class="col-md-12">
 		<?php
 		if ( have_posts() ) :
 							/* Start the Loop if single-then content, if not else this*/
@@ -28,7 +28,7 @@ get_header();
 								if ( is_single() ) :
 		 						 get_template_part( 'template-parts/content', get_post_type() );
 							 else:
-								?> <div class="col-md-12"><?php
+								?> <!--  --><?php
 								 if ($count == "1") {
 									
  								}
