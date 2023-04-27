@@ -873,7 +873,7 @@ section.workAuthorBio a {
 }
 
 article {
-	display: inline;
+	display: inline-block;
 }
 
 .article-content { margin-top: 0em;
