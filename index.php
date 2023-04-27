@@ -29,12 +29,13 @@ get_header();
 		 						 get_template_part( 'template-parts/content', get_post_type() );
 							 else:
 								 if ($count == "1") {
-									//remove card-columns class
-									?> <div class="testing-class-name"><?php
+									//change to col definition
+									?> <div class="col-sm-4 col-lg-4 justify-content-center"><?php
  								}
 								 ?> 
-								 <!--  The following opening column is needed for the post content -->
-								 <div class = "col-sm-4 col-lg-4 justify-content-center">
+								<!--  orig location of col definition -->
+								<!--  The following opening column is needed for the post content -->
+								 <!-- <div class = "col-sm-4 col-lg-4 justify-content-center"> -->
 						<?php
 							 // ... make column, add 1/3 of the posts, second column, third column^
 								get_template_part( 'template-parts/content', 'peak' );
