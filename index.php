@@ -31,7 +31,7 @@ get_header();
 								 if ($count == "1") {
 									//change to col definition
 									//move col defi
-									?> <div class="col-md-8 justify-content-center"><?php
+									?> <div class="col-md-12 justify-content-center"><?php
  								}
 								 ?> 
 								<!--  orig location of col definition -->
