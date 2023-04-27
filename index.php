@@ -28,7 +28,7 @@ get_header();
 								if ( is_single() ) :
 		 						 get_template_part( 'template-parts/content', get_post_type() );
 							 else:
-								?> <div class="col-md-4"><?php
+								?> <div class="col-md-12"><?php
 								 if ($count == "1") {
 									
  								}
