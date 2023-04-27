@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
-			<div class="row justify-content-md-center" data-masonry='{"percentPosition": true }'>
+			<section class="row justify-content-md-center" data-masonry='{"percentPosition": true }'>
 			
 		<?php
 		if ( have_posts() ) :
@@ -57,6 +57,7 @@ get_header();
 						?>
 
 <!-- a test comment here appears at the bottom of page 1 before the pagination, but on p2 it appears after the pagination -->
+					</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
