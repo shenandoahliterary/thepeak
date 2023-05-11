@@ -1592,7 +1592,7 @@ height: auto;
 	margin-bottom: 0;
 }
 
-.card-subtitle{
+a .card-subtitle{
 	text-decoration: none !important; 
 }
 
