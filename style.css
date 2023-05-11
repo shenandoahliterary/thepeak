@@ -1597,7 +1597,7 @@ height: auto;
 
 .card .card-text{
 	color: black;
-	text-decoration: none; /* make this text not underlined on hover*/
+	text-decoration: none !important; /* make this text not underlined on hover*/
 }
 
 /*--------------------------------------------------------------
