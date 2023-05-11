@@ -1601,6 +1601,11 @@ a .card-subtitle{
 	text-decoration: none !important; /* make this text not underlined on hover*/
 }
 
+
+.card-anchor {
+	text-decoration: none !important;
+}
+
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
