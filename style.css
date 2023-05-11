@@ -1267,6 +1267,10 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+.nav-bar-row {
+	font-size: 1.5rem;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
