@@ -1593,6 +1593,7 @@ height: auto;
 }
 
 .card .card-subtitle{
+	text-decoration: none !important; 
 }
 
 .card .card-text{
