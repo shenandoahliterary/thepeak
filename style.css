@@ -1592,11 +1592,11 @@ height: auto;
 	margin-bottom: 0;
 }
 
-.card .card-subtitle{
+.card-subtitle{
 	text-decoration: none !important; 
 }
 
-.card .card-text{
+.card-text{
 	color: black;
 	text-decoration: none !important; /* make this text not underlined on hover*/
 }
